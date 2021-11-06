@@ -1,10 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Hello from './Hello';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Hello />
-  </React.StrictMode>,
-  document.getElementById('app')
-);
+const App = () => {
+  return (
+    <h1>
+      <BrowserRouter>
+        <Router />
+        こんにちは！ 石田です！
+      </BrowserRouter>
+    </h1>
+  );
+};
+
+export default App;
